@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+:root {
+	--theme-body-background-color: #574130;
+	--theme-body-background-color--rgb: 87, 65, 48;
+	--theme-page-background-color--secondary: #ccc1a2;
+	--theme-page-background-color--secondary--rgb: 204, 193, 162;
+	--theme-body-background-image: url(./kino.jpg);
+	--theme-page-background-color: #d7cbab;
+	--header-background-image-height: 160px;
+}
+
+* {
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	color: #e9b95a;
+	text-decoration: none;
+}
+
+a {
+	color: #7d4924;
+}
+
+a:hover {
+	text-shadow: 0 0 10px #ff0;
+}
+
+/* GLOBAL NAVIGATION */
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 8px;
+	max-width: 935px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.creators {
+	background-color: #6d5143;
+	width: auto;
+	padding: 5px;
+	border-radius: 10%;
+}
+
+.header>div {
+	display: inline-block;
+}
+
+.ListItem {
+	display: inline-block;
+	background-color: #42342d;
+}
+
+.CRIco {
+	background-color: #42342d;
+	bottom: 0;
+	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .3);
+	top: 0;
+	width: 70px;
+	height: 80px;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	padding-bottom: 8px;
+	border-radius: 10%;
+}
+
+.CRIco a {
+	color: #a36904;
+}
+
+.CRIco img {
+	border-radius: 50%;
+	border: 2px solid rgb(110, 100, 34);
+}
+
+.HomePage {
+	max-width: 300px;
+}
+
+.HomeContainer {
+	width: auto;
+	padding: 5px;
+	background-color: #6d5143;
+	border-radius: 3%;
+}
+
+.translateCont {
+	max-width: 935px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.translateCont>li {
+	display: inline-block;
+}
+
+.Search {
+	margin-left: 10px;
+}
+
+
+.NavList {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.TodaysTop {
+	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .3);
+	background-color: #42342d;
+	padding: 10px;
+	border-radius: 2%;
+	position: relative;
+	max-width: 935px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.list {
+	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .3);
+	background-color: #42342d;
+	border-radius: 2%;
+	position: relative;
+	max-width: 935px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.list a {
+	color: #a36904;
+}
+
+.TopImg {
+	float: left;
+	padding: 20px 20px 20px 20px;
+	border-radius: 20%;
+}
+
+
+aside {
+	display: inline;
+}
+
+.Yout {
+	padding-right: 265px;
+	padding-bottom: 5px;
+}
+
+.Map {
+	margin-bottom: 5px;
+	border-radius: 5%;
+}
+
+.TopHeader {
+	text-align: left;
+	font-size: 30px;
+	background: linear-gradient(to top, rgba(173, 80, 9, 0.1) 20%, transparent 5%, transparent 100%);
+	width: 180px;
+	padding-bottom: 6px;
+}
+
+.TopText>p {
+	padding: 3px;
+}
+
+.page-background {
+	background: var(--theme-body-background-image) no-repeat;
+	height: var(--header-background-image-height);
+	z-index: -2;
+	position: fixed;
+	width: 100%;
+	background-position: 50%;
+	background-size: cover;
+	height: 100%;
+	filter: brightness(70%)
+}
+
+.elastic li.hide {
+	display: none;
+}
+
+/*  */
+.timeline {
+	color: #f57505;
+}
+
+.timeline {
+	margin-top: 20%;
+	width: 100%;
+	max-width: 800px;
+	padding: 15px 0 0 0;
+	position: relative;
+}
+
+.timeline:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: calc(33% + 6px);
+	bottom: -10px;
+	width: 0px;
+	border: 2px solid;
+}
+
+.begin {
+	clear: both;
+	text-align: left;
+	position: relative;
+}
+
+.begin .parHeader {
+	margin-bottom: 0.5em;
+	float: left;
+	width: 34%;
+	position: relative;
+	height: 32px;
+}
+
+.begin .body {
+	margin: 0 0 3em;
+	float: right;
+	width: 66%;
+	color: rgb(223, 147, 24);
+}
+
+.begin .title:before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 4px solid;
+	background-color: #ffffff;
+	border-radius: 100%;
+	top: 15%;
+	right: -8px;
+	z-index: 99;
+	box-sizing: content-box;
+}
+
+.timeline.begin .bounce-in {
+	visibility: visible;
+	-webkit-animation: bounce-in 0.4s;
+	-moz-animation: bounce-in 0.4s;
+	animation: bounce-in 0.4s;
+}
+
+.date {
+	position: absolute;
+	top: -12px;
+	left: 0;
+	background: #000000;
+	padding: 1px;
+	-webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+	height: 52px;
+	box-sizing: border-box;
+	width: 90%;
+}
+
+.datenum {
+	background: #824601;
+	color: #fff;
+	padding: 0;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	border-right-color: transparent;
+	-webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+	clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+	height: 50px;
+	width: 100%;
+	display: block;
+	line-height: 52px;
+	text-indent: 15px;
+}
+
+.body-container {
+	position: relative;
+	margin-left: 30px;
+}
+
+.body-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
