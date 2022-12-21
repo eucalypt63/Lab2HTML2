@@ -227,7 +227,7 @@ aside {
 	color: rgb(223, 147, 24);
 }
 
-.begin .title:before {
+.begin .parHeader:before {
 	content: "";
 	position: absolute;
 	width: 8px;
